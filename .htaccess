@@ -1,0 +1,13 @@
+AddDefaultCharset UTF-8
+
+
+<IfModule mod_rewrite.c>
+<FilesMatch "\.(ttf|ttc|otf|eot|woff|font.css|css)$">
+    Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+RewriteEngine on
+RewriteBase /jobs/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*) index.php [PT,L]
+</IfModule>
