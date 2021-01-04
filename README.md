@@ -1,6 +1,6 @@
 # FEATHER LITE CMS
 
-## INSTALLATION
+## INSTALLATION INSTRUCTIONS
 
 1. Download the feather-lite-cms
 2. Create a database with `utf8mb4_general_ci` collation
